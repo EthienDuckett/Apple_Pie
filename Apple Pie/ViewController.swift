@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         newRound()
     }
+    
+    var currentGame: Game!
 
     func newRound() {
         let newWord = listOfWords.removeFirst()
