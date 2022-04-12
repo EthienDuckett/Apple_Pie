@@ -27,11 +27,13 @@ class ViewController: UIViewController {
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
+   
     //put IBAction for letterButtonPressed down from here.
     {
     sender.isEnabled = false
     let letterString = sender.title(for: .normal)!
     let letter = Character(letterString.lowercased())
 }
+    
 }
 
