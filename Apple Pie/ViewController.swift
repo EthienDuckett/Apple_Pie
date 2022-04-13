@@ -11,7 +11,20 @@ let incorrectMovesAllowed = 7
 var totalWins = 0
 var totalLosses = 0
 class ViewController: UIViewController {
-
+    
+    
+    
+    @IBOutlet var treeImageView: UIImageView!
+    @IBOutlet var letterButtons: [UIButton]!
+    @IBAction func letterButtonPressed(_ sender: UIButton) {
+        sender.isEnabled = false
+        let letterString = sender.titleLabel!.text!
+        let letter = Character(letterString.lowercased())
+    }
+    @IBOutlet var correctWordLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newRound()
@@ -29,13 +42,4 @@ class ViewController: UIViewController {
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
-   
-    //put IBAction for letterButtonPressed down from here.
-    {
-    sender.isEnabled = false
-    let letterString = sender.title(for: .normal)!
-    let letter = Character(letterString.lowercased())
 }
-    
-}
-
