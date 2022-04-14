@@ -23,4 +23,4 @@ Our team consists of 3 members. It is one of, if not the only team in our class 
   - Contributions: He set up the keyboard buttons for the UI.
 
 ## Credits:
-- Xcode 12 book (Chapter...)
+- Develop in Swift Fundamentals: Xcode 12
