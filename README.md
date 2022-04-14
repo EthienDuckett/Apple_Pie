@@ -1,5 +1,6 @@
 # Apple_Pie
 Xcode iOS app: word guessing game
+![demo screenshot](/cropped_1?raw=true "demo screenshot")
 
 ## Usage
 1. download the repository
