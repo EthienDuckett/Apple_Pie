@@ -29,16 +29,22 @@ class ViewController: UIViewController {
     
     var totalWins = 0 {
         didSet {
-            sleep(3)
-            newRound()
-        }
-    }
-    var totalLosses = 0 {
-        didSet {
+            updateUI()
             correctWordLabel.text = currentGame.word
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 self.newRound()
             }
+            enableLetterButtons(false)
+        }
+    }
+    var totalLosses = 0 {
+        didSet {
+            updateUI()
+            correctWordLabel.text = currentGame.word
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                self.newRound()
+            }
+            enableLetterButtons(false)
         }
     }
     var currentGame: Game!
