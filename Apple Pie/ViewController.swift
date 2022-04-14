@@ -50,6 +50,14 @@ class ViewController: UIViewController {
             scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
             treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
-}
+    func updateGameState() {
+        if currentGame.incorrectMovesRemaining == 0 {
+        totalLosses += 1
+      } else if currentGame.word == currentGame.formattedWord {
+        totalWins += 1
+      } else {
+        updateUI()
+      }
+    }}
 //Test for push
 //Another one
