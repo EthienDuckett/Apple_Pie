@@ -23,5 +23,9 @@ Our team consists of 3 members. It is one of, if not the only team in our class 
   - Bio: unexperienced.
   - Contributions: He set up the keyboard buttons for the UI.
 
+## Review:
+"\[...\] this is FANTASTIC! I love how you have told the game to shuffle the list of words. It even tells you what the word is after you have failed to guess the word. This is great work!"
+--Granville Myers
+
 ## Credits:
 - Develop in Swift Fundamentals: Xcode 12
